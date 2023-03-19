@@ -8,7 +8,11 @@ const returnLastTwoDrivers = (drivers) => drivers.slice(2,4);
 
 const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 
-const createFareMultiplier = (fare) => fareMultiplier = (fare) => fare*5;
+createFareMultiplier = (fare) => {
+    return function fareMultiplier (fare) {      
+        return fare*fare
+    } 
+}
 
 const fareDoubler = (fare) => fare*2;
 
