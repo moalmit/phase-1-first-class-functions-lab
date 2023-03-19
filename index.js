@@ -14,12 +14,20 @@ createFareMultiplier = (fare) => {
     } 
 }
 
-const fareDoubler = (fare) => fare*2;
+function fareDoubler (fare){
+    return fare*2
+}
 
-const fareTripler = (fare) => fare*3;
+function fareTripler (fare){
+    return fare*3
+}
 
-const selectDifferentDrivers = (drivers, b) => b === returnFirstTwoDrivers? drivers.slice(0,2) : drivers.slice(2,4)
-
+function selectDifferentDrivers (drivers, b){
+    
+    if (b === returnFirstTwoDrivers) {b = drivers.slice(0,2);}
+    else {b = drivers.slice(2,4);}
+return b
+}
 
 
 
